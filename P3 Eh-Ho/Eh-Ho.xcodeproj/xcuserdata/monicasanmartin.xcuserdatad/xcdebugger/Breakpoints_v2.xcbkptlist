@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Views/TabBarController/TabBarController.swift"
+            timestampString = "590662006.9585381"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "configureTabBar()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Views/TabBarController/TabBarController.swift"
+            timestampString = "590662006.958644"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "configureTabBar()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Data/Remote/APIClient.swift"
+            timestampString = "590792593.868048"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "session"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Data/Remote/APIClient.swift"
+            timestampString = "590792593.8681231"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "session"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Data/Remote/APIClient.swift"
+            timestampString = "590792593.868194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "send(request:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Data/Remote/APIClient.swift"
+            timestampString = "590792593.868259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "send(request:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Views/TopicsCategory/TopicsCategoryViewController.swift"
+            timestampString = "590840868.375716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "TopicsCategoryViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eh_Ho.TopicsCategoryViewController.tableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "Eh-Ho"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monicasanmartin/Desktop/Bootcamp%20Mobile%202019/Concurrencia%20y%20Red/Clases_Completo/Proyecto_final/Eh-Ho/Eh-Ho/Sources/Views/TopicsCategory/TopicsCategoryViewController.swift"
+                  timestampString = "585697045.862969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eh_Ho.TopicsCategoryViewController.tableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "Eh-Ho"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monicasanmartin/Desktop/Bootcamp%20Mobile%202019/Concurrencia%20y%20Red/Clases_Completo/Proyecto_final/Eh-Ho/Eh-Ho/Sources/Views/TopicsCategory/TopicsCategoryViewController.swift"
+                  timestampString = "585697045.867837"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eh_Ho.TopicsCategoryViewController.tableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "Eh-Ho"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monicasanmartin/Desktop/Bootcamp%20Mobile%202019/Concurrencia%20y%20Red/Clases_Completo/Proyecto_final/Eh-Ho/Eh-Ho/Sources/Views/TopicsCategory/TopicsCategoryViewController.swift"
+                  timestampString = "585697045.869517"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eh_Ho.TopicsCategoryViewController.tableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Eh-Ho"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monicasanmartin/Desktop/Bootcamp%20Mobile%202019/Concurrencia%20y%20Red/Clases_Completo/Proyecto_final/Eh-Ho/Eh-Ho/Sources/Views/TopicsCategory/TopicsCategoryViewController.swift"
+                  timestampString = "585697045.875809"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Data/Repositories/TopicsRepositoryImpl.swift"
+            timestampString = "590860290.437453"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "createNewPost(topicId:raw:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eh-Ho/Sources/Data/Repositories/TopicsRepositoryImpl.swift"
+            timestampString = "590860290.437524"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "createNewPost(topicId:raw:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eh_Ho.TopicsRepositoryImpl.createNewPost(topicId: Swift.Int, raw: Swift.String, createdAt: Swift.String, completion: (Swift.Result&lt;Eh_Ho.AddNewPostResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Eh-Ho"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monicasanmartin/Desktop/Bootcamp%20Mobile%202019/Concurrencia%20y%20Red/Clases_Completo/Proyecto_final/Eh-Ho/Eh-Ho/Sources/Data/Repositories/TopicsRepositoryImpl.swift"
+                  timestampString = "585868229.456892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "874">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Eh_Ho.AddNewPostResponse, Swift.Error&gt;) -&gt; () in Eh_Ho.TopicsRepositoryImpl.createNewPost(topicId: Swift.Int, raw: Swift.String, createdAt: Swift.String, completion: (Swift.Result&lt;Eh_Ho.AddNewPostResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Eh-Ho"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monicasanmartin/Desktop/Bootcamp%20Mobile%202019/Concurrencia%20y%20Red/Clases_Completo/Proyecto_final/Eh-Ho/Eh-Ho/Sources/Data/Repositories/TopicsRepositoryImpl.swift"
+                  timestampString = "585868229.4599741"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
