@@ -15,7 +15,12 @@ class TopicViewCell: UITableViewCell {
     
     @IBOutlet weak var visitsLabelText: UILabel!
     
-    @IBOutlet weak var editableLabelText: UILabel!
+    @IBOutlet weak var postsCountLabelText: UILabel!
+    
+    
+    @IBOutlet weak var dateLabelText: UILabel!
+    
+    // @IBOutlet weak var editableLabelText: UILabel!
     
     
 
@@ -24,10 +29,10 @@ class TopicViewCell: UITableViewCell {
         // Initialization code
     }
 
-    @IBAction func buttonEditTopic(_ sender: UIButton) {
+   /* @IBAction func buttonEditTopic(_ sender: UIButton) {
         print("Pulsado botón editar topic, hay que llamar a viewController o a view Model")
        
-    }
+    }*/
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -36,18 +41,15 @@ class TopicViewCell: UITableViewCell {
     
     
     
-    func configure(title: String, visits: Int, editable: Bool) {
+    func configure(title: String, visits: Int, editable: Bool, postsCount: Int, date: String) {
         //print("Vamos a configurar la celda")
-        visitsLabelText.text = "Views: \(visits)"
-        titleLabelText.text =  "Topic title: \(title)"
+        visitsLabelText.text = "\(visits)"
+        titleLabelText.text =  "\(title)"
+        postsCountLabelText.text = "\(postsCount)"
+        dateLabelText.text = "\(date)"
         
-        /*if editable == true {
-            editableLabelText.text = "Editable"
-        }else{
-            editableLabelText.text = "No editable"
-       
-        }*/
-        editableLabelText.text = ""
+        
+       // editableLabelText.text = ""
        
         
     }

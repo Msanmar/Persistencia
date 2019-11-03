@@ -47,7 +47,8 @@ class TopicsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 40
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 60
        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
         
@@ -73,6 +74,7 @@ class TopicsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.identifier, for: indexPath)
         cell.textLabel?.text = topics[indexPath.row].title
+        
         //cell.textLabel?.text = "Topic dummy \(indexPath.row)"
         return cell
     }

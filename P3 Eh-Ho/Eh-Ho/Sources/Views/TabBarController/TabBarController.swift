@@ -43,7 +43,13 @@ class TabBarController: UITabBarController {
         newTopicController.tabBarItem = UITabBarItem(title: "New Topic", image: nil, selectedImage: nil)
         
         
-        self.tabBar.barTintColor = .white
+        //Colores del tabBar
+         self.tabBar.barTintColor = UIColor.black
+         self.tabBar.barStyle = .blackOpaque
+         self.tabBar.tintColor = UIColor.orange
+
+        
+        //self.tabBar.barTintColor = .white
         let navigTopics = UINavigationController(rootViewController: topicsController)
         let navigCategories = UINavigationController(rootViewController: categoriesController)
         let navigNewTopic = UINavigationController(rootViewController: newTopicController)

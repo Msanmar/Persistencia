@@ -14,7 +14,8 @@ class PostsTopicViewController: UIViewController {
     
   
   
-    @IBOutlet weak var tableView: UITableView!
+   // @IBOutlet weak var tableView: UITableView!
+    private var tableView: UITableView!
     
     let viewModel: PostsTopicViewModel
     var posts: [Post] = []
@@ -38,18 +39,50 @@ class PostsTopicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = 60
-        
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
        
-        
+    
+        navigationController?.navigationBar.prefersLargeTitles = true
+       
+        makeTable()
+        registerNib()
+        setUpTableView()
+    
         viewModel.viewDidLoad()
        
     }
     
+    private func makeTable() {
+        tableView = UITableView(frame: .zero)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(tableView)
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0.0),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0.0),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0.0),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0)
+            ])
+    }
     
+    
+    private func registerNib() {
+        let nib = UINib(nibName: "PostViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "PostViewCell")
+
+    }
+    
+    private func setUpTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+       
+      
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = PostViewCell.estimatedRowHeight()
+       
+        tableView.tableFooterView = UIView()
+        tableView.reloadData()
+        
+    }
     
 }
 
@@ -82,6 +115,7 @@ private func deleteTopic() {
             target: self,
             action: #selector(addNewPost)
         )
+    newPostButton.tintColor = .orange
         
         
         // Lo añado a la navigation bar
@@ -124,7 +158,7 @@ private func deleteTopic() {
                                             print("El título del nuevo post no puede estar vacío")
                                             self.showAlertError(title: "El título del post no puede estar vacío", vc: self)
                                             
-
+                                            
                                         }
                                        
                                         
@@ -154,7 +188,7 @@ extension PostsTopicViewController {
     
 }
 
-extension PostsTopicViewController: UITableViewDataSource {
+extension PostsTopicViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -162,23 +196,47 @@ extension PostsTopicViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.identifier, for: indexPath)
+       
+     //   let cell = tableView.dequeueReusableCell(withIdentifier: "PostViewCell", for: indexPath) as! PostViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostViewCell", for: indexPath) as! PostViewCell
         
-        cell.textLabel?.text = "\(posts[indexPath.row].username) \( "=>" ) \(posts[indexPath.row].cooked)"
-//cell.detailTextLabel?.text = "Visitas: \(topics[indexPath.row].views)"
+        //cell.textLabel?.text = "\(posts[indexPath.row].username) \( "=>" ) \(posts[indexPath.row].cooked)"
+
+  
+    
+        let username = posts[indexPath.row].username
+        let cooked = posts[indexPath.row].cooked
+    
+        
+        cell.configure(texto: cooked, usuario: username)
+    
+        
         return cell
     }
     
+    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        // Swift 4.2 onwards
+        return UITableView.automaticDimension
+    }*/
+    
+    
+/*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+   func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }*/
     
 }
 
-extension PostsTopicViewController: UITableViewDelegate {
+/*extension PostsTopicViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let id = posts[indexPath.row].id
         //print("DidSelectRow at en PostsVC: pulsado el post id:\(id)")
       
     }
-}
+}*/
 
 // MARK: - ViewModel Communication
 protocol PostsTopicViewControllerProtocol: class {
@@ -189,7 +247,8 @@ protocol PostsTopicViewControllerProtocol: class {
 extension PostsTopicViewController: PostsTopicViewControllerProtocol {
     func showListOfPosts(posts: [Post]) {
         self.posts = posts
-        self.title = "Posts en topic id: \(topicId)"
+        //self.title = "Posts en topic id: \(topicId)"
+        self.title = "Posts"
         self.tableView.reloadData()
     }
     

@@ -40,10 +40,10 @@ class TopicsCategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.prefersLargeTitles = true
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 100
+        tableView.rowHeight = 120
         
         let cell = UINib(nibName: "TopicViewCell", bundle: nil)
         tableView.register(cell, forCellReuseIdentifier: UITableViewCell.identifier)
@@ -92,13 +92,23 @@ extension TopicsCategoryViewController: UITableViewDataSource {
         
         let title = topics[indexPath.row].title
         let visits = topics[indexPath.row].views
+        let postsCount = topics[indexPath.row].postsCount
+        let date = topics[indexPath.row].createdAt
+        
+        print("................ Datos de celda a pintar")
+        print(title)
+        print(visits)
+        print(postsCount)
+        let fecha = String(date.prefix(10))
+        print(fecha)
+        print(".........................................")
        
         // Camino para obtener propiedad de editabilidad de un topic
         //let editable = viewModel.isTopicEditable(topicId: topics[indexPath.row].id)
 
         let editable = true
 
-        cell.configure(title: title, visits: visits, editable: editable)
+        cell.configure(title: title, visits: visits, editable: editable, postsCount: postsCount, date: fecha)
         
         return cell
     }
@@ -126,7 +136,9 @@ protocol TopicsCategoryViewControllerProtocol: class {
 extension TopicsCategoryViewController: TopicsCategoryViewControllerProtocol {
     func showListOfTopics(topics: [Topic]) {
         self.topics = topics
-        self.title = "Cat: \(topics[0].categoryID) \("total topics:") \(topics.count)"
+
+        //self.title = "Cat: \(topics[0].categoryID) \("total topics:") \(topics.count)"
+        self.title = "Topics"
         self.tableView.reloadData()
         
     }

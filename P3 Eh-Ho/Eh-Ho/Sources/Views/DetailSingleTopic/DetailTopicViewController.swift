@@ -15,7 +15,8 @@ class DetailTopicViewController: UIViewController {
     @IBOutlet weak var textLabelID: UILabel!
     @IBOutlet weak var textLabelCreatedAt: UILabel!
     @IBOutlet weak var textLabelUsername: UILabel!
-    @IBOutlet weak var textTextTitle: UITextView!
+  
+    @IBOutlet weak var textTitleLabel: UILabel!
     
     @IBOutlet weak var textLabelEditable: UITextField!
     
@@ -75,8 +76,9 @@ class DetailTopicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textTextTitle.text = ""
-        textTextTitle.textColor = .red
+        textTitleLabel.text = ""
+        
+        //textTextTitle.textColor = .red
         
         viewModel.viewDidLoad()
     }
@@ -108,9 +110,10 @@ protocol DetailTopicViewControllerProtocol: class {
 extension DetailTopicViewController: DetailTopicViewControllerProtocol {
     func showDetailTopic(id: Int, title: String, username: String, createdat: String, editable: String, visits: Int) {
         //print("Show Detail Topic Title:      \(title)")
-        textTextTitle.text = "Título del topic: \(title)"
-        textLabelUsername.text = "Creado por: \(username)"
-        textLabelID.text = "Número de visitas: \(visits)"
+//        textTextTitle.text = "Título del topic: \(title)"
+        textTitleLabel.text = "\(title)"
+        textLabelUsername.text = "\(username)"
+        textLabelID.text = " \(visits)"
         
         
         if editable == "Editable" {

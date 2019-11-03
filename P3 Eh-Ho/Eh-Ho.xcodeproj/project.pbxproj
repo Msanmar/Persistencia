@@ -40,6 +40,8 @@
 		3F96F56122EA4F21002BBE0A /* ListPostsTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F56022EA4F21002BBE0A /* ListPostsTopicResponse.swift */; };
 		3F96F56322EA4FE5002BBE0A /* ListPostsTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F56222EA4FE5002BBE0A /* ListPostsTopicRequest.swift */; };
 		3F9FDB012332DA1300078C5A /* UserDefaultsPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FDB002332DA1300078C5A /* UserDefaultsPreferences.swift */; };
+		3FBC8384236A4DE200CEF04E /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC8382236A4DE200CEF04E /* PostViewCell.swift */; };
+		3FBC8385236A4DE200CEF04E /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC8383236A4DE200CEF04E /* PostViewCell.xib */; };
 		3FDB090922E67367007B0219 /* LatestTopicsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB090822E67367007B0219 /* LatestTopicsResponse.swift */; };
 		3FE1DA5722E4F5B40018A343 /* SingleTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1DA5622E4F5B40018A343 /* SingleTopicResponse.swift */; };
 		742A189A22DE5309004C544D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742A189922DE5309004C544D /* AppDelegate.swift */; };
@@ -100,6 +102,8 @@
 		3F96F56022EA4F21002BBE0A /* ListPostsTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsTopicResponse.swift; sourceTree = "<group>"; };
 		3F96F56222EA4FE5002BBE0A /* ListPostsTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsTopicRequest.swift; sourceTree = "<group>"; };
 		3F9FDB002332DA1300078C5A /* UserDefaultsPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPreferences.swift; sourceTree = "<group>"; };
+		3FBC8382236A4DE200CEF04E /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
+		3FBC8383236A4DE200CEF04E /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewCell.xib; sourceTree = "<group>"; };
 		3FDB090822E67367007B0219 /* LatestTopicsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTopicsResponse.swift; sourceTree = "<group>"; };
 		3FE1DA5622E4F5B40018A343 /* SingleTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTopicResponse.swift; sourceTree = "<group>"; };
 		742A189622DE5309004C544D /* Eh-Ho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eh-Ho.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +207,17 @@
 			path = PostsTopic;
 			sourceTree = "<group>";
 		};
+		3FBC837D236A3CE900CEF04E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3F922C1A22EB2E5A001DE4C5 /* TopicViewCell.swift */,
+				3F922C1B22EB2E5A001DE4C5 /* TopicViewCell.xib */,
+				3FBC8382236A4DE200CEF04E /* PostViewCell.swift */,
+				3FBC8383236A4DE200CEF04E /* PostViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		742A188D22DE5309004C544D = {
 			isa = PBXGroup;
 			children = (
@@ -286,8 +301,6 @@
 				742A18D122DE7C17004C544D /* DetailSingleTopic */,
 				742A18B422DE5528004C544D /* LatestTopics */,
 				742A18B122DE5435004C544D /* TabBarController */,
-				3F922C1A22EB2E5A001DE4C5 /* TopicViewCell.swift */,
-				3F922C1B22EB2E5A001DE4C5 /* TopicViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +388,7 @@
 		742A18CE22DE7889004C544D /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				3FBC837D236A3CE900CEF04E /* Cells */,
 				742A18CF22DE789D004C544D /* UITableViewCellExten.swift */,
 				3F0D559723379C8000FD6D22 /* DetectNetwork.swift */,
 			);
@@ -476,6 +490,7 @@
 				3F3D303D22E6E52B0009E272 /* CategoriesViewController.xib in Resources */,
 				3F96F55622E9C943002BBE0A /* NewTopicViewController.xib in Resources */,
 				742A18B822DE5540004C544D /* TopicsViewController.xib in Resources */,
+				3FBC8385236A4DE200CEF04E /* PostViewCell.xib in Resources */,
 				742A18D522DE7C47004C544D /* DetailTopicViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +557,7 @@
 				742A18C622DE6999004C544D /* TopicsRepositoryImpl.swift in Sources */,
 				3F3D304622E70E3C0009E272 /* TopicsCategoryRouter.swift in Sources */,
 				742A18D722DE7C65004C544D /* DetailTopicViewModel.swift in Sources */,
+				3FBC8384236A4DE200CEF04E /* PostViewCell.swift in Sources */,
 				3F3D304B22E70E6E0009E272 /* TopicsCategoryViewController.swift in Sources */,
 				3F01F061233108AD00E745B7 /* Eh-Ho_Database.xcdatamodeld in Sources */,
 				742A18CA22DE6F37004C544D /* TopicsViewModel.swift in Sources */,
